@@ -52,3 +52,14 @@ Installer **Pygame** inden du kører spillet:
 
 ```bash
 pip install pygame
+
+| System                                            | Virker?        | Bemærkning                                                               |
+| ------------------------------------------------- | -------------- | ------------------------------------------------------------------------ |
+| 🐧 **Linux (Debian, Arch, Ubuntu, Fedora m.fl.)** | ✅ **Ja**       | Kører direkte. Pygame findes i pip og distroens pakker.                  |
+| 🪟 **Windows 10 / 11**                            | ✅ **Ja**       | Kører problemfrit via `python pinball.py` efter `pip install pygame`.    |
+| 🍎 **macOS (Intel & Apple Silicon)**              | ✅ **Ja**       | Virker via Homebrew Python + pip. Nogle lyde kræver SDL2 backend.        |
+| 🤖 **Android (via Pydroid3)**                     | ⚠️ **Delvist** | Grafikken kører, men lydfiler (.mp3) kan give fejl — brug .wav i stedet. |
+| 💻 **Raspberry Pi (Pi OS / Debian ARM)**          | ✅ **Ja**       | Ydelsen afhænger af model, men Pygame fungerer stabilt.                  |
+| 💾 **FreeBSD / OpenBSD**                          | ⚠️ **Muligt**  | Kræver SDL2 og Pygame-kompilering manuelt.                               |
+
+
